@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 
-import static constants.RabbitConstants.*;
+import constants.RabbitConstants;
 
 @Configuration
 @Component
@@ -38,13 +38,13 @@ public class RabbitConfig {
     }
 
     TopicExchange exchange() {
-        return new TopicExchange(RPC_EXCHANGE);
+        return new TopicExchange(RabbitConstants.RPC_EXCHANGE);
     }
 
     @PostConstruct
     private void producer() {
-        Queue vQueueMsg = this.queue(QUEUE_OP_MSG);
-        Queue vQueueReply = this.queue(QUEUE_OP_REPLY);
+        Queue vQueueMsg = this.queue(RabbitConstants.QUEUE_OP_MSG);
+        Queue vQueueReply = this.queue(RabbitConstants.QUEUE_OP_REPLY);
 
         TopicExchange vExchange = this.exchange();
 
@@ -64,7 +64,7 @@ public class RabbitConfig {
     RabbitTemplate rabbitTemplate(ConnectionFactory pConnectionFactory) {
         RabbitTemplate template = new RabbitTemplate(pConnectionFactory);
         template.setReplyTimeout(9000);
-        template.setReplyAddress(QUEUE_OP_REPLY);
+        template.setReplyAddress(RabbitConstants.QUEUE_OP_REPLY);
         return template;
     }
 
@@ -73,7 +73,7 @@ public class RabbitConfig {
         SimpleMessageListenerContainer container = new SimpleMessageListenerContainer();
         container.setConnectionFactory(pConnectionFactory);
         container.setMessageListener(rabbitTemplate(pConnectionFactory));
-        container.setQueueNames(QUEUE_OP_REPLY);
+        container.setQueueNames(RabbitConstants.QUEUE_OP_REPLY);
         return container;
     }
 
