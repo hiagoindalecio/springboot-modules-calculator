@@ -1,8 +1,10 @@
-package controllers;
+package hi.springbootmultiplemavenmodules.rest.controllers;
 
-import constants.SystemConstants;
-import dto.CalculationDTO;
-import entity.CalculationResult;
+import hi.springbootmultiplemavenmodules.library.constants.SystemConstants;
+import hi.springbootmultiplemavenmodules.library.dto.CalculationDTO;
+import hi.springbootmultiplemavenmodules.library.util.EnumOperation;
+import hi.springbootmultiplemavenmodules.rest.entity.CalculationResult;
+import hi.springbootmultiplemavenmodules.rest.services.RabbitService;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.MDC;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,9 +13,6 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import services.RabbitService;
-import util.EnumOperation;
 
 import javax.validation.Valid;
 

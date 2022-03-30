@@ -1,4 +1,4 @@
-package entity;
+package hi.springbootmultiplemavenmodules.rest.entity;
 
 import lombok.Getter;
 

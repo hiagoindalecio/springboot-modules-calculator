@@ -1,8 +1,8 @@
-package consumer;
+package hi.springbootmultiplemavenmodules.calculator.consumer;
 
-import constants.RabbitConstants;
-import constants.SystemConstants;
-import dto.CalculationDTO;
+import hi.springbootmultiplemavenmodules.library.constants.RabbitConstants;
+import hi.springbootmultiplemavenmodules.library.constants.SystemConstants;
+import hi.springbootmultiplemavenmodules.library.dto.CalculationDTO;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.MDC;
 import org.springframework.amqp.core.Message;
@@ -12,11 +12,10 @@ import org.springframework.amqp.rabbit.connection.CorrelationData;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import util.EnumOperation;
-import util.JsonCalculationTools;
+import hi.springbootmultiplemavenmodules.library.util.EnumOperation;
+import hi.springbootmultiplemavenmodules.library.util.JsonCalculationTools;
 
 import java.io.IOException;
-import java.math.RoundingMode;
 
 @Slf4j
 @Component

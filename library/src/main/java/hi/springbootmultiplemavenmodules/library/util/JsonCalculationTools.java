@@ -1,10 +1,10 @@
-package util;
+package hi.springbootmultiplemavenmodules.library.util;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import dto.CalculationDTO;
+import hi.springbootmultiplemavenmodules.library.dto.CalculationDTO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

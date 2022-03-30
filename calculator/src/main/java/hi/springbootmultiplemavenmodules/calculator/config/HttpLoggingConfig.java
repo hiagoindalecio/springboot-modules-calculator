@@ -1,4 +1,4 @@
-package config;
+package hi.springbootmultiplemavenmodules.calculator.config;
 
 import ch.qos.logback.access.servlet.TeeFilter;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;

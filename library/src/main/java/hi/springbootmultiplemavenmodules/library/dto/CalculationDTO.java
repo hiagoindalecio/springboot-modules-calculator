@@ -1,8 +1,8 @@
-package dto;
+package hi.springbootmultiplemavenmodules.library.dto;
 
 import lombok.Getter;
 import lombok.Setter;
-import util.EnumOperation;
+import hi.springbootmultiplemavenmodules.library.util.EnumOperation;
 
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;

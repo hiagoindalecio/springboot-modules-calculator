@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>hi</groupId>
-	<artifactId>springboot-multiple-maven-modules</artifactId>
+	<artifactId>springbootmultiplemavenmodules</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<modules>
 		<module>rest</module>
@@ -13,7 +13,7 @@
     </modules>
 	<packaging>pom</packaging>
 
-	<name>springboot-multiple-maven-modules</name>
+	<name>springbootmultiplemavenmodules</name>
 	<description>Spring Boot Calculator With Multiple Maven Modules by Hiago Indalecio</description>
 
 	<parent>

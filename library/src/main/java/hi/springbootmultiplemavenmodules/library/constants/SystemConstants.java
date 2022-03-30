@@ -1,4 +1,4 @@
-package constants;
+package hi.springbootmultiplemavenmodules.library.constants;
 
 public class SystemConstants {
     public static final String CORRELATION_ID = "CorrelationId";

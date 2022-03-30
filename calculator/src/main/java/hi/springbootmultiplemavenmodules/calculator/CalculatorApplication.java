@@ -1,11 +1,11 @@
+package hi.springbootmultiplemavenmodules.calculator;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.web.servlet.ServletComponentScan;
 
 @SpringBootApplication
-@ServletComponentScan
-public class RestApplication {
+public class CalculatorApplication {
     public static void main(String[] args) {
-        SpringApplication.run(RestApplication.class);
+        SpringApplication.run(CalculatorApplication.class, args);
     }
 }

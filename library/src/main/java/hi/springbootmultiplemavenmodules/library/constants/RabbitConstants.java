@@ -1,4 +1,4 @@
-package constants;
+package hi.springbootmultiplemavenmodules.library.constants;
 
 public class RabbitConstants {
     public static final String QUEUE_OP_MSG = "queue_op_msg";

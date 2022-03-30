@@ -1,4 +1,4 @@
-package config;
+package hi.springbootmultiplemavenmodules.rest.config;
 
 import org.springframework.amqp.core.AmqpAdmin;
 import org.springframework.amqp.core.Binding;
@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 
-import constants.RabbitConstants;
+import hi.springbootmultiplemavenmodules.library.constants.RabbitConstants;
 
 @Configuration
 @Component
