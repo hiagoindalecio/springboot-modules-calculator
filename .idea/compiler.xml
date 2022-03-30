@@ -7,11 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="rest" />
-        <module name="calculator" />
+        <module name="library" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="calculator" target="8" />
+      <module name="library" target="8" />
       <module name="rest" target="8" />
       <module name="springboot-modules-calculator" target="1.8" />
     </bytecodeTargetLevel>
@@ -19,6 +20,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="calculator" options="-parameters" />
+      <module name="library" options="-parameters" />
       <module name="rest" options="-parameters" />
     </option>
   </component>
